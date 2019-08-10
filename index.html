@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>XYZ Restaurant</title>
+  </head>
+  <body>
+    <h2 class="bg-white py-2">XYZ Restaurant</h2>
+    <div class="container pt-3">
+      <div class="tab">
+        <button
+          class="tablinks b-5 active"
+          onclick="openChoice(event, 'Order')"
+        >
+          Order Now
+        </button>
+        <button class="tablinks b-5" onclick="openChoice(event, 'Book')">
+          Book a Table
+        </button>
+      </div>
+
+      <div class="text-left">
+        <div id="Order" class="tabcontent" style="display: block;">
+          <h3 class="b-6 mt-3">ORDER NOW</h3>
+          <p class="b-5">Choose a table to initiate order</p>
+          <div class="d-flex flex-wrap">
+            <div class="green-box m-1">
+              1
+            </div>
+            <div class="green-box m-1">
+              3
+            </div>
+            <div class="grey-box m-1">
+              2
+            </div>
+            <div class="grey-box m-1">
+              4
+            </div>
+            <div class="grey-box m-1">
+              5
+            </div>
+            <div class="grey-box m-1">
+              6
+            </div>
+          </div>
+          <div class="d-flex mt-4">
+            <div class="green-small-box m-1"></div>
+            <p class="ml-1 b-5">Available</p>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <div class="grey-small-box m-1"></div>
+            <p class="ml-1 b-5">Occupied</p>
+          </div>
+        </div>
+        <div id="Book" class="tabcontent text-center">
+          <h3 class="b-6 mt-3 text-left">Book a Table</h3>
+          <p class="b-5 mt-4 text-left">for:</p>
+          <form>
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                id="bookings"
+                placeholder="No. of people"
+              />
+            </div>
+            <div class="form-group form-check"></div>
+            <button type="submit" class="btn btn-primary" onclick="book()">
+              Book Now
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <footer class="container footer ">
+      <div class="row">
+        <div class="col-4 my-1">
+          <i class="fa fa-home"></i>
+          <h5>Home</h5>
+        </div>
+        <div class="col-4 my-1">
+          <i class="fa fa-cutlery"></i>
+          <h5>My Order</h5>
+        </div>
+        <div class="col-4 my-1">
+          <i class="fa fa-user"></i>
+          <h5>Profile</h5>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/jquery.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
